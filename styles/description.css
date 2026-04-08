@@ -1,0 +1,17 @@
+.description-title{
+    margin-top: 42px;
+    font-family: 'Roboto-flex', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--content-primary);
+    line-height: 150%;
+}
+.description-content{
+    margin-top: 8px;
+    font-family: 'Roboto-flex',sans-serif;
+    font-size: 14px;
+    color: var(--content-tertiary);
+    width: 319px;
+    line-height: 150%;
+    font-weight: 500;
+}

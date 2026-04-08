@@ -1,63 +1,85 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-:root{
-    --content-primary: #FFFFFF;
-    --content-secondary: #C7C9CC;
-    --content-tertiary: #D9D9D9;
-    --content-brand: #C58DE7;
-    --color-inverse: #030203;
+:root {
+  --content-primary: #ffffff;
+  --content-secondary: #c7c9cc;
+  --content-tertiary: #d9d9d9;
+  --content-brand: #c58de7;
+  --color-inverse: #030203;
 
-    --background-primary: #020202;
-    --background-secondary: #111012;
-    --background-tertiary: #24222E;
-    --background-brand: #C58DE7;
-    --background-gray: #3D3D3D;
+  --background-primary: #020202;
+  --background-secondary: #111012;
+  --background-tertiary: #24222e;
+  --background-brand: #c58de7;
+  --background-gray: #3d3d3d;
 
-    --accent-pink: #D586E0;
-    --accent-blue: #91A1FA;
-    --accent-green: #77c0a7;
-    --accent-lime: #D1DC97;
-    --accent-red: #E9A9B3;
+  --accent-pink: #d586e0;
+  --accent-blue: #91a1fa;
+  --accent-green: #77c0a7;
+  --accent-lime: #d1dc97;
+  --accent-red: #e9a9b3;
 
-    --gradient-border: linear-gradient(
+  --gradient-border: linear-gradient(
     90deg,
-    #77C0AF 0%,
-    #D1DC97 14.84%,
-    #E9A9B3 32.15%,
-    #D586E0 65.79%,
-    #91A1FA 84.58%
+    #77c0af 0%,
+    #d1dc97 14.84%,
+    #e9a9b3 32.15%,
+    #d586e0 65.79%,
+    #91a1fa 84.58%
   );
-  --gradient-background: linear-gradient(
-    #D586E0 0%, #91A1FA 98.93%
-  );
-  --gradient-content: linear-gradient(
-    #C7C9CC 0%, #3D3D3D 100%
-  );
-
-}
-@font-face {
-    font-family: 'Sora';
-    src: url('..fonts/Sora-ExtraBold.ttf')  format('truetype');
-    font-weight: 800;
-    font-style: normal;
-    
-}
-@font-face {
-    font-family: 'Sora';
-    src: url('/fonts/Sora-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
+  --gradient-background: linear-gradient(#d586e0 0%, #91a1fa 98.93%);
+  --gradient-content: linear-gradient(to right,#c7c9cc 0%, #3d3d3d 100%);
 }
 
-body{
-    background-color: var(--background-primary);
+body {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('/imgs/background.png');
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+
 }
-h1{
-    font-family: 'Sora', sans-serif;
-    font-weight: 800;
-    font-size: 24px;
-    color: var(--content-primary);
+section{
+  margin-left: 35px;
+}
+.top-logo {
+  margin: 0;
+  padding-top: 44px;
+  gap: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h3 {
+  font-family: "Roboto-flex", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--content-primary);
+  line-height: 150%;
+}
+.title-logo {
+  height: 38px;
+}
+.small-title{
+  font-family: 'Roboto', sans-serif;
+  background: var(--gradient-content);
+  font-size: 16px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+h1 {
+  color: var(--content-primary);
+  font-family: 'Sora', sans-serif;
+  font-size: 40px;
+}
+.title{
+  margin-top: 46px;
 }

@@ -1,1 +1,27 @@
 @import url(global.css);
+@import url(description.css);
+
+@font-face {
+    font-family: 'Sora';
+    src: url('/fonts/Sora-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sora';
+    src: url('../fonts/Sora-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(/fonts/RobotoMono-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}    
+@font-face {
+    font-family: 'Roboto-flex';
+    src: url('/fonts/RobotoFlex-VariableFont_GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf') format(truetype);
+    font-weight: 500 700;
+    font-style: normal;
+}
