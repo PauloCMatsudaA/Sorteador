@@ -8,14 +8,16 @@
   margin-top: 40px;
 }
 .text-input {
+  justify-content: center;
   font-family: "Roboto-flex", sans-serif;
   font-weight: 700;
   color: var(--content-secondary);
   line-height: 150%;
   font-size: 20px;
+  transition: color 0.5s ease-out;
 }
 .input-raffle {
-  background-color: var(--background-secondary);
+  background-color: var(--background-primary);
   color: var(--content-primary);
   font-family: "Sora", sans-serif;
   font-weight: 700;
@@ -25,6 +27,7 @@
   height: 56px;
   border-radius: 8px;
   border: 2px solid transparent;
+
 }
 .number-selector label {
   display: flex;
@@ -108,15 +111,15 @@
   line-height: 150%;
   font-size: 20px;
 }
-.input-raffle:hover {
+.field:hover .text-input,
+.field:focus-within .text-input {
+  color: var(--content-brand);
+}
+.field:hover .input-raffle,
+.field:focus-within .input-raffle {
   outline: none;
-  background-image: linear-gradient(var(--background-secondary)), var(--gradient-border);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  }
-.input-raffle:focus {
-  outline: none;
-  background-image: linear-gradient(var(--background-secondary)), var(--gradient-border);
+  background-image: linear-gradient(var(--background-secondary), var(--background-secondary)),
+                    var(--gradient-border);
   background-origin: border-box;
   background-clip: padding-box, border-box;
 }
