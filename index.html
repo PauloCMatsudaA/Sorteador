@@ -25,21 +25,21 @@
     <section> 
       <div class="number-selector">
             <div>
-              <p>NÚMEROS</p>       
+              <p id="raffle-text-1" class="text-input">NÚMEROS</p>       
               <div class="selector-1">          
-                  <input type="text" id="raffle">
+                  <input type="text" id="raffle" class="input-raffle">
               </div>
           </div>
           <div>
-              <p>DE</p>
+              <p id="raffle-text-2" class="text-input">DE</p>
               <div class="selector-1">             
-                  <input type="text" id="raffle">        
+                  <input type="text" id="raffle" class="input-raffle">        
               </div>
           </div>
           <div>
-              <p>DE</p>
+              <p id="raffle-text-3" class="text-input">DE</p>
               <div class="selector-1">    
-                  <input type="text" id="raffle">            
+                  <input type="text" id="raffle" class="input-raffle">            
               </div>
           </div>
         </div> 
@@ -49,9 +49,26 @@
           <span>Não repetir número</span>
           </div> 
         <label for="raffle">
-          <button class="raffle-button"><span>SORTEAR</span><img src="/imgs/Frame.png" alt="Arrow Icon">
+          <button class="raffle-button" type="submit"><span>SORTEAR</span><img src="/imgs/Frame.png" alt="Arrow Icon">
         </button></label>
         </div>
     </section>
+    <section >
+      <div class="questions">
+        <img src="imgs/question-icon.svg" alt="Question Icon">
+        <span>Como funciona o sorteador de números?</span>
+        <p>O sorteador utiliza um algoritmo de geração 
+          aleatória para criar números dentro do intervalo 
+          especificado pelo usuário.</p>
+      </div>       
+      <div class="questions">
+        <img src="imgs/question-icon.svg" alt="Question Icon">
+        <span>Posso escolher o intervalo dos números?</span>
+        <p>Sim, você pode definir os valores mínimo e 
+          máximo para o intervalo dos números sorteados.</p>
+      </div>
+        
+    </section>
   </body>
+  <script src="script.js"></script>
 </html>

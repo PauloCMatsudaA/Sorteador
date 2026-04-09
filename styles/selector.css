@@ -7,14 +7,14 @@
   align-items: center;
   margin-top: 40px;
 }
-.number-selector p {
+.text-input {
   font-family: "Roboto-flex", sans-serif;
   font-weight: 700;
   color: var(--content-secondary);
   line-height: 150%;
   font-size: 20px;
 }
-.number-selector input {
+.input-raffle {
   background-color: var(--background-secondary);
   color: var(--content-primary);
   font-family: "Sora", sans-serif;
@@ -24,7 +24,7 @@
   width: 88px;
   height: 56px;
   border-radius: 8px;
-  border: 0px;
+  border: 2px solid transparent;
 }
 .number-selector label {
   display: flex;
@@ -80,12 +80,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 40px 0;
+  margin: 40px 0 80px;
   width: 319px;
   height: 56px;
   background-color: var(--background-tertiary);
   border: 0px;
   border-radius: 8px;
+  cursor: pointer;
 }
 .raffle-button span {
   display: inline-block;
@@ -99,4 +100,23 @@
   display: inline-block;
   width: 24px;
   height: 24px;
+}
+.hover-text{
+  color: var(--content-brand);
+  font-family: "Roboto-flex", sans-serif;
+  font-weight: 700;
+  line-height: 150%;
+  font-size: 20px;
+}
+.input-raffle:hover {
+  outline: none;
+  background-image: linear-gradient(var(--background-secondary)), var(--gradient-border);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  }
+.input-raffle:focus {
+  outline: none;
+  background-image: linear-gradient(var(--background-secondary)), var(--gradient-border);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }

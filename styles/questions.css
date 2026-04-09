@@ -1,0 +1,22 @@
+.questions{
+    margin-top: 36px;
+    display: grid;
+    height: 75px;
+    gap: 6px;
+    grid-template-columns: 20px 20px;
+}
+.questions span{
+    color: var(--content-brand);
+    width: 300px;
+    height: 21px;
+    line-height: 150%;
+    font-family: 'Roboto-flex',sans-serif;
+    font-weight: 500;
+}
+.questions p{
+    width: 300px;
+    font-family: 'Roboto-flex',sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--content-secondary);
+} 
