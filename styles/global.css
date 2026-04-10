@@ -33,7 +33,6 @@
   --gradient-background: linear-gradient(#d586e0 0%, #91a1fa 98.93%);
   --gradient-content: linear-gradient(to right,#c7c9cc 0%, #3d3d3d 100%);
 }
-
 body {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -41,14 +40,11 @@ body {
   background-size: cover;
   background-position: center;
   background-color: black;
+  padding-left: 35px;
 
 }
-section{
-  margin-left: 35px;
-}
 .top-logo {
-  margin: 0;
-  padding-top: 44px;
+  margin-top: 44px;
   gap: 13px;
   display: flex;
   justify-content: center;
@@ -82,4 +78,26 @@ h1 {
 }
 .title{
   margin-top: 46px;
+}
+@media screen and (min-width: 768px){
+  body{
+    padding-left: 134px;
+  }
+  .top-logo{
+    margin: 76px 0 0 120px;
+    justify-content: start;
+  }
+  .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 310px 200px;
+  }
+  .title{
+    width: 522px;  
+    margin: 89px 0 0;
+  }
+
+  h1{
+    font-size: 74px;
+  }
 }

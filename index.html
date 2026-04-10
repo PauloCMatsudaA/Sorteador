@@ -11,63 +11,75 @@
       <img src="imgs/icon.png" alt="Logo da Numbers" class="title-logo" />
       <h3>NUMBERS</h3>
     </section>
-    <section class="title">
-      <p class="small-title">ONLINE - GRATUITO</p>
-      <h1>SORTEADOR <br />DE NÚMEROS</h1>
-    </section>
-    <section>
-      <h4 class="description-title">QUERO SORTEAR:</h4>
-      <p class="description-content">
-        Defina o intervalo e a quantidade de números, clique em "Sortear" e veja
-        os resultados na tela. É rápido e fácil!
-      </p>
-    </section>
-    <section> 
-      <div class="number-selector">
-            <div>      
-              <div class="field">      
-                  <label for="quantity" class="text-input"><span>NÚMEROS</span></label>    
-                  <input type="text" id="quantity" class="input-raffle">
-              </div>
-          </div>
-          <div>
-              <div class="field"> 
-                <label for="min" class="text-input"><span>DE</span></label>            
-                  <input type="text" id="min" class="input-raffle">        
-              </div>
-          </div>
-          <div>
-              <div class="field"> 
-                <label for="max" class="text-input"><span>ATÉ</span></label>   
-                  <input type="text" id="max" class="input-raffle">            
-              </div>
-          </div>
-        </div> 
-          <div class="togle">
-            <input type="checkbox" id="togle-number">
-            <label for="togle-number" class="switch">
-          <span>Não repetir número</span>
+    <section class="content">
+      <section class="title">
+        <p class="small-title">ONLINE - GRATUITO</p>
+        <h1>SORTEADOR <br />DE NÚMEROS</h1>
+      </section>
+      <!-- <section class="raffle-section">
+        <h4 class="description-title">QUERO SORTEAR:</h4>
+        <p class="description-content">
+          Defina o intervalo e a quantidade de números, clique em "Sortear" e veja
+          os resultados na tela. É rápido e fácil!
+        </p>
+        <div class="number-selector">
+              <div>      
+                <div class="field">      
+                    <label for="quantity" class="text-input"><span>NÚMEROS</span></label>    
+                    <input type="text" id="quantity" class="input-raffle">
+                </div>
+            </div>
+            <div>
+                <div class="field"> 
+                  <label for="min" class="text-input"><span>DE</span></label>            
+                    <input type="text" id="min" class="input-raffle">        
+                </div>
+            </div>
+            <div>
+                <div class="field"> 
+                  <label for="max" class="text-input"><span>ATÉ</span></label>   
+                    <input type="text" id="max" class="input-raffle">            
+                </div>
+            </div>
           </div> 
-        <label for="raffle">
-          <button class="raffle-button" type="submit"><span>SORTEAR</span><img src="/imgs/Frame.png" alt="Arrow Icon">
-        </button></label>
+            <div class="togle">
+              <input type="checkbox" id="togle-number">
+              <label for="togle-number" class="switch">
+            <span>Não repetir número</span>
+            </div> 
+          <label for="raffle">
+            <button class="button" type="submit"><span>SORTEAR</span><img src="/imgs/Frame.png" alt="Arrow Icon">
+          </button></label>
+          </div>
+      </section> -->
+      <section class="result-section">
+        <h2 class="description-title">RESULTADO DO SORTEIO</h2>
+        <p class="small-title">1º RESULTADO</p>
+        <div class="resutls-colum">
+          <div class="result-container"></div>
+            <span class="number-result">23</span>
+          
+          <!-- <div class="result-container">
+            <span class="number-result">22</span>
+          </div> -->
         </div>
-    </section>
-    <section >
-      <div class="questions">
-        <img src="imgs/question-icon.svg" alt="Question Icon">
-        <span>Como funciona o sorteador de números?</span>
-        <p>O sorteador utiliza um algoritmo de geração 
-          aleatória para criar números dentro do intervalo 
-          especificado pelo usuário.</p>
-      </div>       
-      <div class="questions">
-        <img src="imgs/question-icon.svg" alt="Question Icon">
-        <span>Posso escolher o intervalo dos números?</span>
-        <p>Sim, você pode definir os valores mínimo e 
-          máximo para o intervalo dos números sorteados.</p>
-      </div>
-        
+        <button class="button"><span>SORTEAR NOVAMENTE</span><img src="imgs/replay-icon.svg" alt="Replay Icon"></button>
+      </section>
+      <section class="question-section">
+        <div class="questions">
+          <img src="imgs/question-icon.svg" alt="Question Icon">
+          <span>Como funciona o sorteador de números?</span>
+          <p>O sorteador utiliza um algoritmo de geração 
+            aleatória para criar números dentro do intervalo 
+            especificado pelo usuário.</p>
+        </div>       
+        <div class="questions">
+          <img src="imgs/question-icon.svg" alt="Question Icon">
+          <span>Posso escolher o intervalo dos números?</span>
+          <p>Sim, você pode definir os valores mínimo e 
+            máximo para o intervalo dos números sorteados.</p>
+        </div>
+      </section>
     </section>
   </body>
   <script src="script.js"></script>

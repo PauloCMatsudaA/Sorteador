@@ -20,3 +20,12 @@
     font-weight: 700;
     color: var(--content-secondary);
 } 
+
+@media screen and (min-width: 1024px) {
+  .question-section{
+    margin: 0; 
+  }   
+  .questions p{
+    width: 386px;
+  }
+}
