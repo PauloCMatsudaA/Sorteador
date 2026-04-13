@@ -16,7 +16,7 @@
         <p class="small-title">ONLINE - GRATUITO</p>
         <h1>SORTEADOR <br />DE NÚMEROS</h1>
       </section>
-      <!-- <section class="raffle-section">
+      <section class="raffle-section" id="sectionRaffle">
         <h4 class="description-title">QUERO SORTEAR:</h4>
         <p class="description-content">
           Defina o intervalo e a quantidade de números, clique em "Sortear" e veja
@@ -48,19 +48,21 @@
             <span>Não repetir número</span>
             </div> 
           <label for="raffle">
-            <button class="button" type="submit"><span>SORTEAR</span><img src="/imgs/Frame.png" alt="Arrow Icon">
+            <button class="button" type="submit" id="raffle-button"><span>SORTEAR</span><img src="/imgs/Frame.png" alt="Arrow Icon">
           </button></label>
           </div>
-      </section> -->
-      <section class="result-section">
+      </section> 
+      <section class="hide" id="result-section">
         <h2 class="description-title">RESULTADO DO SORTEIO</h2>
-        <p class="small-title">1º RESULTADO</p>
-        <div class="resutls-colum">
-          <div class="result-container"></div>
-            <span class="number-result">23</span>
-          
-          <!-- <div class="result-container">
-            <span class="number-result">22</span>
+        <p class="small-title">1º RESULTADO</p>
+        <div class="resutls-colum" id="column-results">
+          <!-- <div class="item">
+            <div class="result-container first-column-result"></div>
+            <span class="number-result first-colum-number">23</span>
+          </div> -->
+         <!-- <div class="item">
+            <div class="result-container second-colomn-result"></div>
+            <span class="number-result second-colomn-number">24</span>
           </div> -->
         </div>
         <button class="button"><span>SORTEAR NOVAMENTE</span><img src="imgs/replay-icon.svg" alt="Replay Icon"></button>

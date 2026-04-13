@@ -10,6 +10,13 @@
     gap: 16px;
     margin: 40px 0;
 }
+.item{
+  display: grid;
+  position: relative;
+  place-items: center;
+  animation: moveTo 1s ease-in-out 2s forwards;
+
+}
 .result-container{
     display: flex;
     width: 100px;
@@ -17,59 +24,80 @@
     border-radius: 28px;
     background-color: var(--content-brand);
     align-items: center;
+    opacity: 0;
     justify-content: center;
-    scale: 1;
-
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
+    transform-origin: center;
+    position: absolute;
+}
+.first-column-result{
+    animation-name: showResults;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 .number-result{
+    opacity: 0;
     position: relative;
-    right: 104px;
-    down:3px;
     font-family: 'Roboto', sans-serif;
     font-size: 64px;
-    color: var(--color-inverse);
+    color: var(--color-inverse); 
 }
-@keyframes showResults {
-    0%{
+.first-colum-number{
+    animation: numberResult 2s 1s forwards;
 
-    }
-    5%{
-        scale: 1;
-    }
-    10%{
-        transform: rotate(18deg);
-    }
-    /* 15%{
-        transform: rotate(36deg);
-    }
-    20%{
-        transform: rotate(54deg);
-    } */
-    /* 25%{
-        transform: rotate(72deg);
-    }
-    30%{
-        transform: rotate(90deg);
-    } */
-    /* 35%{
-        transform: rotate(108deg);
-    }
-    50%{
-        transform: rotate(126deg);
-    }
-    60%{
-        transform: rotate(144deg);
-    } */
-    /* 65%{
-        transform: rotate(162deg);
-    } */
-    80%{
-        transform: rotate(180deg);
-    }
-    100%{
-        scale: 0;
-    }
+}
+@keyframes moveTo {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes showResults {
+  0%{
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  20%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes numberResult {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    color: var(--content-brand);
+  }
+}
+@keyframes counterRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-180deg);
+  }
+}
+.second-colomn-result{
+    animation-name: showResults;
+    animation-delay: 5s;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    margin-left: 20px;
+}
+.second-colomn-number{
+    animation-name: numberResult;
+    animation-duration: 2s;
+    animation-delay: 6s;
+    animation-fill-mode: both;
+    margin-left: 20px;
 }

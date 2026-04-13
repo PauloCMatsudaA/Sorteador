@@ -43,6 +43,9 @@ body {
   padding-left: 35px;
 
 }
+.hide{
+  display: none;
+}
 .top-logo {
   margin-top: 44px;
   gap: 13px;
